@@ -16,9 +16,9 @@
     "matrix_pins": {
         "rows": [
             "GP14",
-            "GP24",
-            "GP25",
-            "GP26"
+            "GP9",
+            "GP10",
+            "GP24"
         ],
         "cols": [
             "GP23",
