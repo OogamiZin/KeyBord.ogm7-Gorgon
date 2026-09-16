@@ -1,0 +1,11 @@
+{
+    "include": [
+        {
+            "keyboard": "ogm7_gorgon",
+            "keymap": "vial",
+            "target": "uf2",
+            "flags": "EXTRAFLAGS=\"\"",
+            "name": "ogm7_gorgon_vial"
+        }
+    ]
+}
