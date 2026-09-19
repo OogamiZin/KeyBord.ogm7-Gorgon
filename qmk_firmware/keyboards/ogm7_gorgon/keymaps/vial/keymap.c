@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                    KC_N,            KC_M,        KC_COMMA,           KC_UP,
                  KC_DOT,    KC_LEFT_CTRL,     KC_LEFT_GUI,     KC_LEFT_ALT,
         LT(1,KC_LANGUAGE_2),        KC_SPACE,        KC_ENTER, LT(1,KC_LANGUAGE_1),
-                KC_LEFT,         KC_DOWN,        KC_RIGHT, LT(3,KC_LEFT_BRACKET)
+                KC_LEFT,         KC_DOWN,        KC_RIGHT, LT(2,KC_LEFT_BRACKET)
     ),
     [1] = LAYOUT(
                   KC_F1,           KC_F2,           KC_F3,           KC_F4,
@@ -34,23 +34,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_INTERNATIONAL_1, KC_RIGHT_BRACKET,    KC_BACKSLASH,   KC_NONUS_HASH,
            KC_SEMICOLON,        KC_QUOTE,        KC_SLASH,      KC_PAGE_UP,
                KC_EQUAL,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-                KC_HOME,    KC_PAGE_DOWN,          KC_END,  KC_TRANSPARENT
+        LT(1,KC_LANGUAGE_2),  KC_TRANSPARENT,  KC_TRANSPARENT, LT(1,KC_LANGUAGE_1),
+                KC_HOME,    KC_PAGE_DOWN,          KC_END, LT(3,KC_LEFT_BRACKET)
     ),
     [2] = LAYOUT(
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT
-    ),
-    [3] = LAYOUT(
          KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
          KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
          KC_TRANSPARENT,  KC_TRANSPARENT,       KC_DELETE,        KC_GRAVE,
@@ -58,10 +45,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
          KC_TRANSPARENT,  KC_TRANSPARENT,       KC_ESCAPE,  KC_TRANSPARENT,
          KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT, KC_AUDIO_VOL_UP,
-               KC_ENTER,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
-         KC_TRANSPARENT, KC_AUDIO_VOL_DOWN,  KC_TRANSPARENT,  KC_TRANSPARENT
+         KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT, KC_KB_VOLUME_UP,
+            KC_KP_ENTER,  KC_TRANSPARENT,  KC_TRANSPARENT,  KC_TRANSPARENT,
+        LT(3,KC_LANGUAGE_2),  KC_TRANSPARENT,  KC_TRANSPARENT, LT(3,KC_LANGUAGE_1),
+         KC_TRANSPARENT, KC_KB_VOLUME_DOWN,  KC_TRANSPARENT, LT(2,KC_LEFT_BRACKET)
+    ),
+    [3] = LAYOUT(
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+                  KC_NO,           KC_NO,           KC_NO,           KC_NO,
+            LT(3,KC_NO),           KC_NO,           KC_NO,     LT(3,KC_NO),
+                  KC_NO,           KC_NO,           KC_NO,     LT(3,KC_NO)
     )
 };
 
